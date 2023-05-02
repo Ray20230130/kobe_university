@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>XX大學</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <section class="section_01">
+    <div class="items">
+      <!-- school Logo -->
+      <div class="logo">
+        <a href="#">
+          <img src="./images/school_mark002.png" alt="">
+        </a>
+      </div>
+
+      <!-- Full page nav -->
+      <nav class="side-menu-btn" id="side-menu-switch">
+        <i class="bi bi-list"></i>
+      </nav>
+      <div class="side-menu" id="side-menu">
+        <div class="img"></div>
+        <div class="connect">
+          <div class="search">
+            <form>
+              <input type="search">
+              <input type="submit" value="search">
+            </form>
+          </div>
+          <div class="connectNav">
+            <a href="#"><i class="fa-solid fa-hammer"></i>鐵人賽</a>
+            <a href="#"><i class="fa-solid fa-radiation"></i>暴力班</a>
+            <a href="#"><i class="fa-solid fa-plug-circle-plus"></i>RWD醬子</a>
+            <a href="#"><i class="fa-solid fa-fish-fins"></i>金魚網頁</a>
+            <a href="#"><i class="fa-solid fa-scissors"></i>金魚切版</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FEATURES -->
+      <div class="guideBox">
+        <div class="guideBtn">
+          <i class="bi bi-box-arrow-in-up"></i>FEATURES
+        </div>
+        <div class="guideNav">
+          <ul>
+            <li><a href="#">服裝聯合後悔直</a></li>
+            <li><a href="#">服裝聯合後悔直</a></li>
+            <li><a href="#">服裝聯合後悔直</a></li>
+            <li><a href="#">服裝聯合後悔直</a></li>
+            <li><a href="#">服裝聯合後悔直</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- back to top -->
+      <div class="btn-top">
+        <a href="#"><i class="bi bi-chevron-bar-up"></i></a>
+      </div>
+    </div>
+    <div class="text">
+      <p>心と社会を、つなぐ。動かす。</p>
+      <p>心理学部 心理学科</p>
+    </div>
+
+  </section>
+
+  <section class="section_02">
+    <h1>こころを知れば、社会が見える。</h1>
+    <h1>見える世界が、変わってくる。</h1>
+    <p>心を知ることは、人間をとことん深く知ること。</p>
+    <p>さらに言えば、人間の心が動かす社会の動きを知ることでもあります。</p>
+    <p>まるで小さな宇宙のような､謎深い心のメカニズムを探究し､</p>
+    <p>行動との関係性を多角的に実証していく心理学の学び。</p>
+    <p>何気ない普段のコミュニケーションも、モノが売れるしくみや仕掛けも、</p>
+    <p>SNSで話題のニュースも、身近なあらゆるモノやコトが、</p>
+    <p>人の心と密接に関わっていることに、きっとあなたも気づくはずです。</p>
+    <p>4年間の学びを通して、「臨床心理」「経営・消費者心理」「メディア心理」という</p>
+    <p>３つのモデルで科学的な知識と実践的なスキルを身につけ、「心の専門家」として、</p>
+    <p>教育、医療、地域、メディアなど様々なフィールドで活躍できる人材を目指します。</p>
+  </section>
+
+  <div class="section_03">
+    <div class="circle">
+      <p>
+        臨床心理<br>
+        モデル
+      </p>
+    </div>
+  </div>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script>
+    ; (function () {
+      let sidemenuSwitch = document.querySelector('#side-menu-switch');
+      let sidemenu = document.querySelector('#side-menu');
+
+      sidemenuSwitch.addEventListener('click', () => {
+        sidemenu.classList.toggle('menuactive')
+      });
+
+
+
+
+
+
+    })();
+  </script>
+</body>
+
+</html>
