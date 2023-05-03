@@ -9,15 +9,13 @@
 
 .section_01 {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background: url(https://source.unsplash.com/n--CMLApjfI) center center/cover;
-}
-.section_01 .items {
-  position: sticky;
-  top: 0;
 }
 .section_01 .items .logo {
   width: 200px;
+  position: fixed;
+  z-index: 999;
 }
 .section_01 .items .logo a img {
   width: 100%;
@@ -26,25 +24,38 @@
   width: 80px;
   height: 80px;
   background-color: #B73E3E;
+  color: #eedbcf;
   font-size: 3rem;
   font-weight: 900;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
+  position: fixed;
+  z-index: 999;
   top: 0;
   right: 0;
+}
+.section_01 .items .side-menu-btn p:first-child {
+  margin-bottom: -15px;
+}
+.section_01 .items .side-menu-btn p:nth-child(2) {
+  font-size: 1.1rem;
 }
 .section_01 .items .side-menu {
   background-color: #eedbcf;
   border-radius: 1rem;
-  position: absolute;
+  position: fixed;
+  z-index: 999;
   top: 0;
   left: 15%;
   width: 70%;
@@ -111,7 +122,8 @@
   opacity: 1;
 }
 .section_01 .items .guideBox {
-  position: absolute;
+  position: fixed;
+  z-index: 999;
   right: -75px;
   top: calc(50vh - 50px);
   border-radius: 0 0 1rem 1rem;
@@ -129,7 +141,7 @@
           transform: rotate(0deg);
   right: 0px;
   top: calc(50vh - 200px);
-  border-radius: 1rem;
+  border-radius: 1rem 0 0 1rem;
   -webkit-transition: all 0.5s, width 1.5s, height 0.5s;
   transition: all 0.5s, width 1.5s, height 0.5s;
 }
@@ -166,7 +178,6 @@
   width: 80px;
   height: 80px;
   background-color: #EAE0DA;
-  color: #a4a4b0;
   font-size: 2.5rem;
   font-weight: 700;
   display: -webkit-box;
@@ -178,25 +189,32 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: calc(100vh - 80px);
 }
-.section_01 .text {
+.section_01 .items .btn-top a {
+  color: #a4a4b0;
+}
+.section_01 .text01 {
   width: 780px;
-  margin: 77vh auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
-.section_01 .text p {
+.section_01 .text01 p {
   color: #eedbcf;
   font-size: 1.5rem;
 }
-.section_01 .text p:last-child {
+.section_01 .text01 p:last-child {
   font-size: 3rem;
 }
 
@@ -214,21 +232,137 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: radial-gradient(circle, rgba(221, 184, 198, 0.5960784314) 30%, transparent 80%) center center/100% 100%, url(./images/japan001.jpg) center center/200% 100%;
+  font-weight: 800;
 }
 .section_02 h1 {
-  font-size: 2.7rem;
-  font-weight: 500;
+  font-size: 3.2rem;
+  font-weight: 400;
 }
 .section_02 h1:nth-child(2) {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .section_02 p {
   font-size: 1.1rem;
-  font-weight: 400;
-  line-height: 3rem;
+  font-weight: 500;
+  line-height: 2.7rem;
 }
 
 .section_03 {
   width: 100%;
   height: 90vh;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgba(243, 243, 243, 0.9450980392)), color-stop(54%, transparent)) center center/100% 100%, url(./images/girl003.jpg) center/1800px 110vh;
+  background: linear-gradient(0deg, rgba(243, 243, 243, 0.9450980392) 50%, transparent 54%) center center/100% 100%, url(./images/girl003.jpg) center/1800px 110vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.section_03 .circle {
+  width: 300px;
+  height: 300px;
+  border: 3px solid #ff82ac;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #be607f;
+  position: relative;
+  top: 55%;
+  left: 18%;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.section_03 .circle:hover {
+  border: 5px dashed #ff82ac;
+  scale: 1.1;
+}
+.section_03 .text03 {
+  position: relative;
+  top: 68%;
+  left: 22%;
+}
+.section_03 .text03 h3 {
+  font-size: 2rem;
+}
+.section_03 .text03 p {
+  font-size: 1rem;
+}
+
+.section_04 {
+  width: 100%;
+  min-height: 90vh;
+  background-color: rgb(209, 223, 134);
+  padding: 3rem 0 3rem;
+}
+.section_04 h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.section_04 .wrap04 {
+  width: 1400px;
+  margin: 0 auto;
+}
+.section_04 .wrap04 .cards {
+  width: 100%;
+  min-height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.section_04 .wrap04 .cards .cardBottom {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.section_04 .wrap04 .cards .card {
+  width: 24%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.section_04 .wrap04 .cards .card:hover .imgPerson {
+  top: 2%;
+}
+.section_04 .wrap04 .cards .card .imgPerson {
+  width: 100%;
+  position: relative;
+  left: 20%;
+  margin-bottom: -20%;
+}
+.section_04 .wrap04 .cards .card .imgPerson img {
+  width: 60%;
+}
+.section_04 .wrap04 .cards .card .imgState {
+  width: 100%;
+}
+.section_04 .wrap04 .cards .card .imgState img {
+  width: 100%;
+}
+.section_04 .wrap04 .cards .card .text04 {
+  text-align: center;
+  padding: 1rem;
+}
+.section_04 .wrap04 .cards .card .text04 h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
